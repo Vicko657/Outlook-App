@@ -1,21 +1,31 @@
 body {
-  background-color: #f9f7fe;
+  background: #FC466B4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fc466b,
+    #3f5efb
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fc466b,
+    #3f5efb
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: neue-haas-grotesk-display, sans-serif;
+  color: white;
 }
 .weather-app {
-  background: white;
-  max-width: 600px;
+  max-width: 800px;
   margin: 45px auto;
   padding: 30px;
   border-radius: 6px;
   box-shadow: 0 30px 50px rgba(65);
 }
 a {
-  color: #885df1;
+  color: white;
+  font-weight: 500;
 }
 
 header {
-  border-bottom: 1px solid #f9f7fe;
   padding: 0 0 30px 0;
 }
 .search-form-input {
@@ -23,23 +33,31 @@ header {
   border: none;
   border-radius: 6px;
   width: 80%;
+  margin-right: 10px;
   font-size: 16px;
   padding: 15px 20px;
+  opacity: 0.5;
+}
+.search-form-input ::placeholder {
+  color: white;
+  font-family: neue-haas-grotesk-display, sans-serif;
 }
 
 .search-form-button {
-  background-color: #885df1;
+  background-color: black;
   border: none;
   border-radius: 6px;
   color: white;
   font-size: 16px;
-  padding: 15px 30px;
+  padding: 15px 45px;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 800;
 }
 footer {
   border-top: 1px solid #f9f7fe;
   padding: 30px 0 0 0;
   text-align: center;
-  font-size: 12px;
+  font-size: 16px;
 }
 main {
   padding: 30px 0;
@@ -49,16 +67,18 @@ main {
   justify-content: space-between;
 }
 .weather-app-data strong {
-  color: black;
+  color: white;
 }
 .weather-app-city {
   margin: 0;
-  font-size: 38px;
+  font-size: 60px;
   list-style: 48px;
+  font-weight: 300;
 }
 .weather-app-details {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 20px;
+  font-weight: 200;
 }
 
 .weather-app-temp-container {
@@ -66,17 +86,21 @@ main {
 }
 
 .weather-app-icon {
-  font-size: 44px;
-  margin-top: 22px;
+  width: 88px;
+  height: 88px;
+  margin-top: 10px;
 }
 
 .weather-app-temp {
-  font-size: 88px;
-  font-weight: bold;
-  margin-left: 10px;
+  font-size: 120px;
+  line-height: 88px;
 }
 
 .weather-app-unit {
-  margin-top: 16px;
-  font-size: 28px;
+  margin-top: 0px;
+  font-size: 32px;
+}
+
+strong {
+  font-weight: 500;
 }
