@@ -31,17 +31,16 @@ header {
   padding: 0 0 30px 0;
 }
 .search-form-input {
-  background-color: #f9f7fe;
+  background: rgba(255, 255, 255, 0.2);
   border: none;
   border-radius: 6px;
   width: 80%;
   margin-right: 10px;
   font-size: 16px;
   padding: 15px 20px;
-  opacity: 0.5;
 }
 ::placeholder {
-  color: rgb(148, 148, 148);
+  color: white;
   font-family: neue-haas-grotesk-display, sans-serif;
 }
 
@@ -51,12 +50,11 @@ header {
   border-radius: 6px;
   color: white;
   font-size: 16px;
-  padding: 15px 35px;
+  padding: 15px 40px;
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 800;
 }
 footer {
-  border-top: 0.5px solid #f9f7fe;
   padding: 30px 0 0 0;
   text-align: center;
   font-size: 16px;
@@ -119,15 +117,31 @@ strong {
 }
 
 .weather-forecast {
+  border-top: 0.5px solid rgba(255, 255, 255, 0.5);
   margin-top: 20px;
-  text-align: center;
 }
 
 .weather-forecast-date {
-  font-size: 16px;
+  font-size: 18px;
   color: white;
+  font-weight: 200;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
 }
 
 .weather-forecast-temperature {
-  font-size: 13px;
+  font-size: 18px;
+  color: white;
+  font-weight: 200;
+  text-align: center;
+}
+
+.weather-forecast-bg {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 5px;
 }
