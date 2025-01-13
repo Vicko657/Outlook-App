@@ -48,11 +48,14 @@ a {
 header {
   padding: 0 0 30px 0;
 }
+form {
+  display: flex;
+}
 .search-form-input {
   background: rgba(255, 255, 255, 0.2);
   border: none;
   border-radius: 6px;
-  width: 80%;
+  width: 100%;
   margin-right: 10px;
   font-size: 16px;
   padding: 15px 20px;

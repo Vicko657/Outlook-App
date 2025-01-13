@@ -110,3 +110,6 @@ function displayForecast(response) {
 
   forecastElement.innerHTML = forecastHtml;
 }
+
+let message = "Hello";
+message = "Goodbye";
